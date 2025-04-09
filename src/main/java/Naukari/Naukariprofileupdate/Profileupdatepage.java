@@ -40,8 +40,9 @@ public class Profileupdatepage {
 	
 	//Actions
 	public Profileupdatepage Clickprofile() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		wait.until(ExpectedConditions.elementToBeClickable(Viewprofile));
 		Viewprofile.click();
-		Reporter.log("Clicked on profile", true);
 		return this;
 		
 	}
@@ -51,23 +52,20 @@ public class Profileupdatepage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(Resumeheadline));
 		Resumeheadline.click();
-		Reporter.log("Clicked on resume headline", true);
 		return this;
 		
 	}
 	
 	public Profileupdatepage Editresumeheadline() {
 		editresumeheadline.click();
-		Reporter.log("Clicked on edit resume headline", true);
 		return this;
 		
 	}
 	
 	public Profileupdatepage Saveresumeheadline() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.elementToBeClickable(Saveresumeheadline));
 		Saveresumeheadline.click();
-		Reporter.log("Clicked on save resume headline", true);
 		return this;
 		
 	}
