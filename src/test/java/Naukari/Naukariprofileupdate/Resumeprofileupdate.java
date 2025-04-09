@@ -9,7 +9,7 @@ public class Resumeprofileupdate extends Baseclass {
 	//update the resume headline
 	@Test(priority=2)
 	public void updateresumeprofile() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		login l = new login();
 				l.login();
 		Profileupdatepage p = new Profileupdatepage(driver);

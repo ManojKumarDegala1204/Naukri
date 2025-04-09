@@ -44,7 +44,7 @@ public class Profileupdatepage {
 	
 	
 	public Profileupdatepage ClickResumeheadline() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(Resumeheadline));
 		Resumeheadline.click();
 		return this;
@@ -58,7 +58,7 @@ public class Profileupdatepage {
 	}
 	
 	public Profileupdatepage Saveresumeheadline() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(Saveresumeheadline));
 		Saveresumeheadline.click();
 		return this;
