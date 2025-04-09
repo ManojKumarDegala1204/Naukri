@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Profileupdatepage {
-	
+	public WebDriver driver;
 	public Profileupdatepage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		// TODO Auto-generated constructor stub
@@ -44,7 +44,7 @@ public class Profileupdatepage {
 	
 	
 	public Profileupdatepage ClickResumeheadline() {
-		WebDriverWait wait = new WebDriverWait(Baseclass.driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(Resumeheadline));
 		Resumeheadline.click();
 		return this;
@@ -58,7 +58,7 @@ public class Profileupdatepage {
 	}
 	
 	public Profileupdatepage Saveresumeheadline() {
-		WebDriverWait wait = new WebDriverWait(Baseclass.driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(Saveresumeheadline));
 		Saveresumeheadline.click();
 		return this;
