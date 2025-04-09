@@ -27,8 +27,8 @@ public class Profileupdatepage {
 	@FindBy(xpath="//div[@class='card mt15']//div//span[@class='edit icon'][normalize-space()='editOneTheme']")
 	public WebElement editresumeheadline;
 	
-	//@FindBy(xpath="//button[normalize-space()='Save']")
-	@FindBy(xpath="//button[text()='Save']")
+	@FindBy(xpath="//button[normalize-space()='Save']")
+	//@FindBy(xpath="//button[text()='Save']")
 	public WebElement Saveresumeheadline;
 	
 	
