@@ -1,7 +1,6 @@
 package Naukari.Naukariprofileupdate;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import org.testng.Reporter;
 import java.time.Duration;
 
