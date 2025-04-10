@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser launched]]>
@@ -35,6 +35,18 @@
       <![CDATA[Clicked on View Profile]]>
     </line>
     <line>
+      <![CDATA[Clicked on Resume headline]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Edit Resume headline]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Save]]>
+    </line>
+    <line>
+      <![CDATA[Resume headline updated successfully]]>
+    </line>
+    <line>
       <![CDATA[Clicked on Keyskills]]>
     </line>
     <line>
@@ -46,13 +58,16 @@
     <line>
       <![CDATA[Keyskills updated successfully]]>
     </line>
+    <line>
+      <![CDATA[Clicked on IT skills]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-04-10T14:28:20 IST" name="Suite" finished-at="2025-04-10T14:28:33 IST" duration-ms="13843">
+  <suite started-at="2025-04-10T20:12:57 IST" name="Suite" finished-at="2025-04-10T20:13:15 IST" duration-ms="18324">
     <groups>
     </groups>
-    <test started-at="2025-04-10T14:28:20 IST" name="Test" finished-at="2025-04-10T14:28:33 IST" duration-ms="13843">
+    <test started-at="2025-04-10T20:12:57 IST" name="Test" finished-at="2025-04-10T20:13:15 IST" duration-ms="18324">
       <class name="Naukari.Naukariprofileupdate.login">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.login@7193666c]" started-at="2025-04-10T14:28:20 IST" name="launchBrowser" finished-at="2025-04-10T14:28:24 IST" duration-ms="4223" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.login@3bb9a3ff]" started-at="2025-04-10T20:12:57 IST" name="launchBrowser" finished-at="2025-04-10T20:13:03 IST" duration-ms="5915" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser launched]]>
@@ -65,7 +80,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="login()[pri:1, instance:Naukari.Naukariprofileupdate.login@7193666c]" started-at="2025-04-10T14:28:24 IST" name="login" finished-at="2025-04-10T14:28:26 IST" duration-ms="2354" status="PASS">
+        <test-method signature="login()[pri:0, instance:Naukari.Naukariprofileupdate.login@3bb9a3ff]" started-at="2025-04-10T20:13:03 IST" name="login" finished-at="2025-04-10T20:13:04 IST" duration-ms="1704" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Actual URL: https://www.naukri.com/mnjuser/homepage]]>
@@ -75,13 +90,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.login@7193666c]" started-at="2025-04-10T14:28:26 IST" name="closeBrowser" finished-at="2025-04-10T14:28:26 IST" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.login@3bb9a3ff]" started-at="2025-04-10T20:13:04 IST" name="closeBrowser" finished-at="2025-04-10T20:13:04 IST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- Naukari.Naukariprofileupdate.login -->
       <class name="Naukari.Naukariprofileupdate.Resumeprofileupdate">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@4567f35d]" started-at="2025-04-10T14:28:26 IST" name="launchBrowser" finished-at="2025-04-10T14:28:30 IST" duration-ms="3458" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@2e005c4b]" started-at="2025-04-10T20:13:04 IST" name="launchBrowser" finished-at="2025-04-10T20:13:09 IST" duration-ms="4121" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser launched]]>
@@ -94,7 +109,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="updateresumeprofile()[pri:2, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@4567f35d]" started-at="2025-04-10T14:28:30 IST" name="updateresumeprofile" finished-at="2025-04-10T14:28:33 IST" duration-ms="3441" status="PASS">
+        <test-method signature="Resumeheadlineupdate()[pri:0, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@2e005c4b]" started-at="2025-04-10T20:13:09 IST" name="Resumeheadlineupdate" finished-at="2025-04-10T20:13:13 IST" duration-ms="4093" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Actual URL: https://www.naukri.com/mnjuser/homepage]]>
@@ -105,6 +120,22 @@
             <line>
               <![CDATA[Clicked on View Profile]]>
             </line>
+            <line>
+              <![CDATA[Clicked on Resume headline]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Edit Resume headline]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Save]]>
+            </line>
+            <line>
+              <![CDATA[Resume headline updated successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Resumeheadlineupdate -->
+        <test-method signature="updatekeyskills()[pri:1, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@2e005c4b]" started-at="2025-04-10T20:13:13 IST" name="updatekeyskills" finished-at="2025-04-10T20:13:14 IST" duration-ms="1202" status="PASS">
+          <reporter-output>
             <line>
               <![CDATA[Clicked on Keyskills]]>
             </line>
@@ -118,8 +149,15 @@
               <![CDATA[Keyskills updated successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- updateresumeprofile -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@4567f35d]" started-at="2025-04-10T14:28:33 IST" name="closeBrowser" finished-at="2025-04-10T14:28:33 IST" duration-ms="156" status="PASS">
+        </test-method> <!-- updatekeyskills -->
+        <test-method signature="UpdateITSkills()[pri:2, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@2e005c4b]" started-at="2025-04-10T20:13:14 IST" name="UpdateITSkills" finished-at="2025-04-10T20:13:15 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on IT skills]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- UpdateITSkills -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Naukari.Naukariprofileupdate.Resumeprofileupdate@2e005c4b]" started-at="2025-04-10T20:13:15 IST" name="closeBrowser" finished-at="2025-04-10T20:13:15 IST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

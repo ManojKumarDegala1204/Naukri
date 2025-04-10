@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class login extends Baseclass {
 	
 	//Login to naukari website
-	@Test(priority=1)	
+	@Test	
 	public void login() {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));             // wait the driver for 5 seconds 

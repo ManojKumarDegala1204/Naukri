@@ -2,10 +2,9 @@ package Naukari.Naukariprofileupdate;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,25 +23,29 @@ public class Profileupdatepage {
 	public WebElement Viewprofile;
 	
 	@FindBy(xpath="//span[@class='text'][normalize-space()='Resume headline']")
-	public WebElement Resumeheadline;
+	
+	public WebElement Resumeheadlineoption;
+	
 	
 	@FindBy(xpath="//div[@class='card mt15']//div//span[@class='edit icon'][normalize-space()='editOneTheme']")
-	public WebElement editresumeheadline;
 	
-	//@FindBy(xpath="//button[normalize-space()='Save']")
-	@FindBy(xpath="//button[@class='btn-dark-ot'][normalize-space()='Save']")
-	//@FindBy(xpath="//button[text()='Save']")
-	public WebElement Saveresumeheadline;
+	public WebElement Editresumeheadlineicon;
+	
+	
+	@FindBy(xpath="//button[normalize-space()='Save']")
+	public WebElement Saveresumeheadlineoption;
 	
 	@FindBy(xpath="//span[@class='text'][normalize-space()='Key skills']")
 	public WebElement Keyskills;
 	
 	@FindBy(xpath="//div[@class='widgetHead typ-16Bold']//span[@class='edit icon'][normalize-space()='editOneTheme']")
-	public WebElement editkeyskills;
+	public WebElement Editkeyskills;
 	
 	@FindBy(xpath="//button[@id='saveKeySkills']")
 	public WebElement Savekeyskills;
 	
+	@FindBy(xpath="//span[@class='text'][normalize-space()='IT skills']")
+	public WebElement ITskillsoption;
 	
 	
 
@@ -57,33 +60,31 @@ public class Profileupdatepage {
 	}
 	
 	
-	public Profileupdatepage ClickResumeheadline() {
+	public Profileupdatepage ClickResumeheadlineoption() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.elementToBeClickable(Resumeheadline));
-		Resumeheadline.click();
+		wait.until(ExpectedConditions.elementToBeClickable(Resumeheadlineoption));
+		Resumeheadlineoption.click();
 		return this;
 		
 	}
 	
-	public Profileupdatepage Editresumeheadline() {
-		editresumeheadline.click();
+	public Profileupdatepage ClickonEditresumeheadlineicon() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.elementToBeClickable(Editresumeheadlineicon));
+		Editresumeheadlineicon.click();
 		return this;
 		
 	}
 	
-	public Profileupdatepage Saveresumeheadline() {
-		
+	public Profileupdatepage ClickonSaveresumeheadlinebutton() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-		wait.until(ExpectedConditions.elementToBeClickable(Saveresumeheadline));
-//		Actions actions = new Actions(driver);
-//		actions.moveToElement(Saveresumeheadline).click().perform();
-
-		Saveresumeheadline.click();
+		wait.until(ExpectedConditions.elementToBeClickable(Saveresumeheadlineoption));
+		Saveresumeheadlineoption.click();
 		return this;
 	}
 	
 	public Profileupdatepage ClickKeyskills() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		wait.until(ExpectedConditions.elementToBeClickable(Keyskills));
 		Keyskills.click();
 		return this;
@@ -91,17 +92,24 @@ public class Profileupdatepage {
 	}
 	
 	public Profileupdatepage Editkeyskills() {
-		editkeyskills.click();
+		Editkeyskills.click();
 		return this;
 		
 	}
 	
 	public Profileupdatepage Savekeyskills() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		wait.until(ExpectedConditions.elementToBeClickable(Savekeyskills));
 		Savekeyskills.click();
 		return this;
 		
+	}
+	
+	public Profileupdatepage ClickonITskillsoption() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		wait.until(ExpectedConditions.elementToBeClickable(ITskillsoption));
+		ITskillsoption.click();
+		return this;
 	}
 
 }
