@@ -15,14 +15,24 @@ public class Resumeprofileupdate extends Baseclass {
 	//	p.Clickprofile().ClickResumeheadline().Editresumeheadline().Saveresumeheadline();
 		p.Clickprofile();
 		Reporter.log("Clicked on View Profile", true);
-		p.ClickResumeheadline();
-		Reporter.log("Clicked on Resume headline", true);
-		p.Editresumeheadline();
-		Reporter.log("Clicked on Edit Resume headline", true);
-		p.Saveresumeheadline();
-		Reporter.log("Clicked on Save", true);
+		p.ClickKeyskills();
+		Reporter.log("Clicked on Keyskills", true);
+		p.Editkeyskills();
+		Reporter.log("Clicked on Edit Keyskills", true);
+		p.Savekeyskills();
+		Reporter.log("Clicked on Save Keyskills", true);
+		Reporter.log("Keyskills updated successfully", true);
 		
-		Reporter.log("Resume headline updated successfully", true);
+//		p.Clickprofile();
+//		Reporter.log("Clicked on View Profile", true);
+//		p.ClickResumeheadline();
+//		Reporter.log("Clicked on Resume headline", true);
+//		p.Editresumeheadline();
+//		Reporter.log("Clicked on Edit Resume headline", true);
+//		p.Saveresumeheadline();
+//		Reporter.log("Clicked on Save", true);
+//		
+//		Reporter.log("Resume headline updated successfully", true);
 	}
 
 }
