@@ -4,55 +4,81 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Reporter;
 
 public class Resumeprofileupdate extends Baseclass {
-	
+	private Logger log;
 	@Test(priority=0)
 	public void Resumeheadlineupdate() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		log=LogManager.getLogger(this.getClass().getName());
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		login l = new login();
 		l.login();
 		Profileupdatepage p = new Profileupdatepage(driver);
 		p.Clickprofile();
-		Reporter.log("Clicked on View Profile", true);
+		log.info("Clicked on View Profile");
+		//Reporter.log("Clicked on View Profile", true);
 		p.ClickResumeheadlineoption();
-		Reporter.log("Clicked on Resume headline", true);
+		log.info("Clicked on Resume headline");
+	//	Reporter.log("Clicked on Resume headline", true);
 		p.ClickonEditresumeheadlineicon();
-		Reporter.log("Clicked on Edit Resume headline", true);
+		log.info("Clicked on Edit Resume headline");
+		p.ClickonResumeheadlineform();
+		log.info("clicked on form to edit resume headline");
+	//	Reporter.log("Clicked on Edit Resume headline", true);
 		p.ClickonSaveresumeheadlinebutton();
-		Reporter.log("Clicked on Save", true);
+		log.info("Clicked on Save");
+	//	Reporter.log("Clicked on Save", true);
+		log.info("Resume headline updated successfully");
+		p.Recordsuccessmsgforresumeheadline();
+	//	log.info(p.Successmessageforresumeheadline.getText());
+		
+		
 	
-		Reporter.log("Resume headline updated successfully", true);
+		
+	//	Reporter.log("Resume headline updated successfully", true);
 	}
 	
 	@Test(priority=1)
 	public void updatekeyskills() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		log=LogManager.getLogger(this.getClass().getName());
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 //		login l = new login();
 //				l.login();
 		Profileupdatepage p = new Profileupdatepage(driver);
 //		
 //		p.Clickprofile();
 //		Reporter.log("Clicked on View Profile", true);
-		p.ClickKeyskills();
-		Reporter.log("Clicked on Keyskills", true);
+		p.ClickKeyskillsoption();
+		log.info("Clicked on Keyskillsoption");
+//		Reporter.log("Clicked on Keyskills", true);
 		p.Editkeyskills();
-		Reporter.log("Clicked on Edit Keyskills", true);
+		log.info("Clicked on Edit Keyskills");
+		p.ClickonKeyskillsform();
+		log.info("Clicked on form to edit keyskills");
+//		Reporter.log("Clicked on Edit Keyskills", true);
 		p.Savekeyskills();
-		Reporter.log("Clicked on Save Keyskills", true);
-		Reporter.log("Keyskills updated successfully", true);
+		log.info("Clicked on Save Keyskills");
+//		Reporter.log("Clicked on Save Keyskills", true);
+		log.info("Keyskills updated successfully");
+//		Reporter.log("Keyskills updated successfully", true);
+		p.Recordsuccessmsgforkeyskills();
+//		log.info(p.Successmessageforkeyskills.getText());
 		
 	}
 	@Test(priority=2)
     public void UpdateITSkills() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		log=LogManager.getLogger(this.getClass().getName());
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
     	Profileupdatepage p = new Profileupdatepage(driver);
 //    	p.Clickprofile();
 //    	Reporter.log("Clicked on View Profile", true);
     	p.ClickonITskillsoption();
-    	Reporter.log("Clicked on IT skills", true);
+    	log.info("Clicked on IT skills");
+//    	Reporter.log("Clicked on IT skills", true);
     }
 	
 }

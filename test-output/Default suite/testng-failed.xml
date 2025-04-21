@@ -9,6 +9,7 @@
           <include name="closeBrowser"/>
           <include name="updatekeyskills"/>
           <include name="launchBrowser"/>
+          <include name="Resumeheadlineupdate"/>
         </methods>
       </class> <!-- Naukari.Naukariprofileupdate.Resumeprofileupdate -->
     </classes>
