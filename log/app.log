@@ -2041,3 +2041,30 @@ Resume Headline has been successfully saved.
 12:51:50.020 [main]INFO  Naukari.Naukariprofileupdate.Profileupdatepage - Success message is displayed
 12:51:50.468 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on IT skills
 12:51:50.731 [main]INFO  Naukari.Naukariprofileupdate.Baseclass - Browser closed
+13:58:14.479 [main]INFO  Naukari.Naukariprofileupdate.Baseclass - Browser name is: chrome
+13:58:19.854 [main]INFO  Naukari.Naukariprofileupdate.Baseclass - Chrome Browser launched
+13:58:19.916 [main]INFO  Naukari.Naukariprofileupdate.Baseclass - Browser maximized
+13:58:23.527 [main]INFO  Naukari.Naukariprofileupdate.Baseclass - URL opened
+13:58:23.547 [main]INFO  Naukari.Naukariprofileupdate.Baseclass - URL verified
+13:58:23.594 [main]INFO  Naukari.Naukariprofileupdate.login - Login to naukari website
+13:58:24.571 [main]INFO  Naukari.Naukariprofileupdate.login - verify url
+13:58:25.212 [main]INFO  Naukari.Naukariprofileupdate.Loginpage - Actual URL: https://www.naukri.com/mnjuser/homepage
+13:58:25.212 [main]INFO  Naukari.Naukariprofileupdate.Loginpage - Login successful
+13:58:25.218 [main]INFO  Naukari.Naukariprofileupdate.Loginpage - Expected URL: https://www.naukri.com/mnjuser/homepage
+13:58:26.977 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on View Profile
+13:58:27.841 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on Resume headline
+13:58:28.221 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on Edit Resume headline
+13:58:28.560 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - clicked on form to edit resume headline
+13:58:28.893 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on Save
+13:58:28.893 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Resume headline updated successfully
+13:58:29.360 [main]INFO  Naukari.Naukariprofileupdate.Profileupdatepage - Success message: Resume Headline has been successfully saved.
+13:58:29.360 [main]INFO  Naukari.Naukariprofileupdate.Profileupdatepage - Success message is displayed
+13:58:30.193 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on Keyskillsoption
+13:58:31.088 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on Edit Keyskills
+13:58:31.465 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on form to edit keyskills
+13:58:31.723 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on Save Keyskills
+13:58:31.723 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Keyskills updated successfully
+13:58:32.633 [main]INFO  Naukari.Naukariprofileupdate.Profileupdatepage - Success message: Key Skills have been successfully saved.
+13:58:32.633 [main]INFO  Naukari.Naukariprofileupdate.Profileupdatepage - Success message is displayed
+13:58:32.949 [main]INFO  Naukari.Naukariprofileupdate.Resumeprofileupdate - Clicked on IT skills
+13:58:33.153 [main]INFO  Naukari.Naukariprofileupdate.Baseclass - Browser closed

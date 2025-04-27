@@ -188,8 +188,7 @@ public class Profileupdatepage {
 		wait.until(ExpectedConditions.textToBePresentInElement(Successmessageforkeyskills, "Key Skills have been successfully saved."));
 		String Expectedmsg = "Key Skills have been successfully saved.";
 		String Actualmsg = Successmessageforkeyskills.getText();
-		//Reporter.log("Success message: " + Actualmsg, true);
-		//Reporter.log("Success message: " + msg, true);
+		
 		log.info("Success message: " + Actualmsg);
 		if (Actualmsg.equals(Expectedmsg)) {
 			log.info("Success message is displayed");
@@ -204,8 +203,7 @@ public class Profileupdatepage {
 		wait.until(ExpectedConditions.textToBePresentInElement(Successmessageforresumeheadline, "Resume Headline has been successfully saved."));
 		String Expectedmsg = "Resume Headline has been successfully saved.";
 		String Actualmsg = Successmessageforresumeheadline.getText();
-		//Reporter.log("Success message: " + Actualmsg, true);
-		//Reporter.log("Success message: " + resumesuccessmsg, true);
+		
 		log.info("Success message: " + Actualmsg);
 		if (Actualmsg.equals(Expectedmsg)) {
 			log.info("Success message is displayed");
