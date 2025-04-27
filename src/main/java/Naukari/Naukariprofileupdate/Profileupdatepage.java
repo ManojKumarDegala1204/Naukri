@@ -185,10 +185,10 @@ public class Profileupdatepage {
 	public Profileupdatepage Recordsuccessmsgforkeyskills() {
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.visibilityOf(Successmessageforkeyskills));
-		String Expectedmsg = "Resume Headline has been successfully saved.";
+		wait.until(ExpectedConditions.textToBePresentInElement(Successmessageforkeyskills, "Key Skills have been successfully saved."));
+		String Expectedmsg = "Key Skills have been successfully saved.";
 		String Actualmsg = Successmessageforkeyskills.getText();
-		Reporter.log("Success message: " + Actualmsg, true);
+		//Reporter.log("Success message: " + Actualmsg, true);
 		//Reporter.log("Success message: " + msg, true);
 		log.info("Success message: " + Actualmsg);
 		if (Actualmsg.equals(Expectedmsg)) {
@@ -201,10 +201,10 @@ public class Profileupdatepage {
 	
 	public Profileupdatepage Recordsuccessmsgforresumeheadline() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-		wait.until(ExpectedConditions.visibilityOf(Successmessageforresumeheadline));
-		String Expectedmsg = "Key Skills have been successfully saved.";
+		wait.until(ExpectedConditions.textToBePresentInElement(Successmessageforresumeheadline, "Resume Headline has been successfully saved."));
+		String Expectedmsg = "Resume Headline has been successfully saved.";
 		String Actualmsg = Successmessageforresumeheadline.getText();
-		Reporter.log("Success message: " + Actualmsg, true);
+		//Reporter.log("Success message: " + Actualmsg, true);
 		//Reporter.log("Success message: " + resumesuccessmsg, true);
 		log.info("Success message: " + Actualmsg);
 		if (Actualmsg.equals(Expectedmsg)) {
